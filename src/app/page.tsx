@@ -1,26 +1,13 @@
 "use client"
 import Image from "next/image";
-import { useRouter } from 'next/navigation'
-import { DownOutlined, CaretDownOutlined } from '@ant-design/icons';
-import { Space, Dropdown } from 'antd';
-import type { MenuProps } from 'antd';
 import Menu from "./components/menu";
-import 'react-multi-carousel/lib/styles.css';
-import { useRef, useEffect } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
 
-  useEffect(() => {
-   
-  }, []);
   return (
     <div >
 			<Menu/>
-			<div className="header" style={{display:"flex", flexDirection:"column", alignItems:"center", padding:"60px 0"}}>
-				<h1 id="heading" style={{fontSize:"55px", fontWeight:"600", width:"fit-content"}}>Ultimate Guide to Harry Styles</h1>
-				<div className="behind"></div>
-				<h1>A blog dedicated to Grammy winner, singer, songwriter, and actor Harry Styles</h1>
-			</div>
 			<div id="carousel">
 				<div style={{backgroundImage:"url('/hs-grammys.png')", backgroundPosition:"center", backgroundSize:"cover", position:"relative"}}>
 					<h1 style={{backgroundColor:"white", position:"absolute", padding:"40px", top:"45%", left:"40%"}}>Grammy Winner</h1>
