@@ -19,12 +19,13 @@ body {
 }
 
 .behind {
-  height: .75rem;
-  width: 700px;
+  height: .80rem;
+  width: 60vw;
+  max-width: 700PX;
   position: absolute;
   z-index: -1;
   top: 165px;
-  border-radius: .375rem;
+  /* border-radius: .375rem; */
   background-color: #F4CCC2;
   /* background-image: linear-gradient(to right, rgb(201, 157, 201), rgb(110, 202, 224)); */
 }

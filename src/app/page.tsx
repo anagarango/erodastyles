@@ -29,7 +29,7 @@ export default function Home() {
 						<h1 id="heading" style={{fontSize:"30px", fontWeight:"600", width:"fit-content", paddingBottom:"20px", color:"#EF9B9A"}}>About the Blog</h1>
 						<p>This blog is about the stages of his life and the significant milestones that he has reached through his career, basically, an ultimate guide of his life. For the Harry fans that pretty much know everything there is to him, I'll also be making posts voicing my opinion on specific events or things related to him, so if you want to read more of those juicy details, head over to the Blog page. This blog has been something I had thought about creating for a long time ago when it seemed popular, but now that I was allowed to make a blog about anything, it seemed like the perfect time to finally start a blog like this. So enjoy explorin' and learnin'!</p>
 					</div>
-					<Image src="/cocoa.png" width={200} height={100} style={{width:"275px", height:"275px", borderRadius:"50%"}}/>
+					<Image alt="profile" src="/cocoa.png" width={200} height={100} style={{width:"275px", height:"275px", borderRadius:"50%"}}/>
 				</div>
 
 				<div style={{padding:"70px 0"}}>

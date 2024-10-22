@@ -12,13 +12,13 @@ export default function Menu() {
         {
           key: '1',
           label: (
-            <h1 style={{fontSize:"16px"}} onClick={()=>r.push("/author")}>ABOUT THE AUTHOR</h1>
+            <h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/author")}>ABOUT THE AUTHOR</h1>
           )
         },
         {
           key: '2',
           label: (
-						<h1 style={{fontSize:"16px"}} onClick={()=>r.push("/author")}>ABOUT THE SINGER</h1>
+						<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/author")}>ABOUT THE SINGER</h1>
           )
         }
     ];
@@ -26,26 +26,20 @@ export default function Menu() {
 			{
 				key: '1',
 				label: (
-					<h1 style={{fontSize:"16px"}}  onClick={()=>r.push("/author")}>Gallery</h1>
-				)
-			},
-			{
-				key: '2',
-				label: (
-					<h1 style={{fontSize:"16px"}}  onClick={()=>r.push("/author")}>Quiz</h1>
+					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}}  onClick={()=>r.push("/author")}>GALLERY</h1>
 				)
 			},
 			{
 				key: '3',
 				label: (
-					<h1 style={{fontSize:"16px"}}  onClick={()=>r.push("/author")}>Sources</h1>
+					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}}  onClick={()=>r.push("/author")}>SOURCES</h1>
 				)
 			},
 			{
 				key: '4',
 				label: (
-					<a style={{fontSize:"16px"}}  target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-						Harry Styles is Overrated 
+					<a style={{fontSize:"16px", fontFamily:"Montserrat"}}  target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+						HARRY STYLES IS OVERRATED
 					</a>
 				)
 			}
@@ -54,19 +48,19 @@ export default function Menu() {
 			{
 				key: '1',
 				label: (
-					<h1 style={{fontSize:"16px"}} onClick={()=>r.push("/author")}>Musical Influences</h1>
+					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/author")}>MUSICAL INFLUENCES</h1>
 				)
 			},
 			{
 				key: '2',
 				label: (
-					<h1 style={{fontSize:"16px"}} onClick={()=>r.push("/author")}>Recent Projects</h1>
+					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/author")}>RECENT PROJECTS</h1>
 				)
 			}
 		];
   return (
 		<>
-			<div style={{display:"flex", fontSize:"16px" ,fontWeight:"300", justifyContent:"center", gap:"35px", padding:"15px 0"}}>
+			<div style={{display:"flex", fontSize:"16px" ,fontWeight:"300", justifyContent:"center", gap:"4%", padding:"15px 0"}}>
 				<Dropdown menu={{ items:about }}>
 					<Space>
 						ABOUT
