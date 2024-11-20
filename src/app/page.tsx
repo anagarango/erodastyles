@@ -40,10 +40,10 @@ export default function Home() {
 					<div style={{width:"80%"}}>
 						<h1 style={{fontSize:"26px", fontWeight:"600", borderBottom:"1px solid #DBCDCD"}}>LATEST POSTS</h1>
 						<div style={{display:"flex", flexWrap:"wrap", gap:10}}>
-							{posts.toReversed().map((o,i)=>{
+							{posts.map((o,i)=>{
 								if(i < 4){
 									return(
-										<div id="recentposts" onClick={()=>r.push(`/blog/${10-i}`)} style={{width:"calc(50% - 10px)", padding:"20px", cursor:"pointer"}}>
+										<div id="recentposts" onClick={()=>r.push(`/blog/${i}`)} style={{width:"calc(50% - 10px)", padding:"20px", cursor:"pointer"}}>
 											<h4 id="heading" style={{fontSize:"25px"}}>{o.title}</h4>
 											<p style={{padding:"20px 0", textAlign:"center"}}>{o.snippet}</p>
 											<img src={o.cover}/>
@@ -105,7 +105,7 @@ export default function Home() {
 					<h1 style={{fontSize:"26px", fontWeight:"600" ,borderBottom:"1px solid #DBCDCD", paddingTop:"70px"}}>HARRY'S RECENT PROJECT</h1>
 					<div id="recentprojects" style={{display:"flex", flexWrap:"wrap", gap:"20px", padding:"30px 0"}}>
 						{recentprojects.map((o,i)=>(
-							<div onClick={()=>r.push(`/blog/${10-i}`)} style={{display:"flex", width:"calc(50% - 10px)", padding:"20px", gap:20, cursor:"pointer"}}>
+							<div onClick={()=>r.push(`/recentprojects/${i}`)} style={{display:"flex", width:"calc(50% - 10px)", padding:"20px", gap:20, cursor:"pointer"}}>
 								<div>
 									<h4 id="heading" style={{fontSize:"25px"}}>{o.title}</h4>
 									<p style={{padding:"20px 0 0 0", textAlign:"center"}}>{o.snippet}</p>

@@ -48,7 +48,7 @@ export default function Menu() {
 			{
 				key: '1',
 				label: (
-					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/author")}>MUSICAL INFLUENCES</h1>
+					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/musicalinfluences")}>MUSICAL INFLUENCES</h1>
 				)
 			},
 			{

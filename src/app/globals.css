@@ -72,6 +72,12 @@ body {
   background-color: rgba(255,255,255,1) !important;
 }
 
+#recentprojects > div:hover{
+  background-color: #F3F3F3 !important;
+}
+
+
+
 @media screen and (max-width:900px) {
   #aboutblog{
     flex-direction: column;
