@@ -83,7 +83,7 @@ export default function Menu() {
 				</Dropdown>
 			</div>
 
-			<div className="header" style={{display:"flex", flexDirection:"column", alignItems:"center", padding:"60px 0"}}>
+			<div className="header" style={{display:"flex", flexDirection:"column", alignItems:"center", padding:"60px 20px"}}>
 				<h1 id="heading" style={{fontSize:"55px", fontWeight:"600", width:"fit-content", cursor:"pointer"}} onClick={()=>r.push("/")}>Ultimate Guide to Harry Styles</h1>
 				<div className="behind"></div>
 				<h1>A blog dedicated to Grammy winner, singer, songwriter, and actor Harry Styles</h1>

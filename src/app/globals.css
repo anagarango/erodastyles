@@ -11,6 +11,7 @@
 
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 #heading {
@@ -55,4 +56,14 @@ body {
   border: solid black 2px;
   box-sizing: border-box;
   flex-shrink: 0;
+}
+
+@media screen and (max-width:800px) {
+  #aboutblog{
+    flex-direction: column;
+  }
+  #aboutblog div{
+    width:100% !important;
+    padding-bottom: 50px;
+  }
 }
