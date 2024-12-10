@@ -1,9 +1,12 @@
+"use client"
 import Image from "next/image";
 import { Button, Space, DatePicker, Dropdown, version } from 'antd';
 import Menu from "../components/menu";
 import blogPosts from "../../../posts/posts.json"
+import { useRouter } from "next/navigation";
 
 export default function Blog() {
+  const r = useRouter()
   return (
     <div>
       <Menu/>
@@ -16,7 +19,7 @@ export default function Blog() {
                     <h1 id="heading" style={{fontSize:"35px"}}>{o.title}</h1>
                     <h4 style={{fontSize:"13px", color:"#EF9B9A", paddingBottom:"15px"}}>{o.date}</h4>
                     <p>{o.snippet}</p>
-                    <Button type="default" size="large" variant="filled">Read More...</Button>
+                    <Button type="default" size="large" variant="filled" onClick={()=>r.push(`/blog/${i}`)}>Read More...</Button>
                   </div>
                 </div>
               )

@@ -1,0 +1,8 @@
+{
+  "hell":["/hell/bangkok.png", "/hell/copenhagen.png", "/hell/hamburg.png", "/hell/manila.png", "/hell/melbourne.png", "/hell/milan.png", "/hell/rio.png", "/hell/singapore.png"],
+  "meh":["/meh/amsterdam.jpg" ,"/meh/bologna.png", "/meh/boston.png", "/meh/denver.png", "/meh/detroit.png", "/meh/hong kong.jpeg", "/meh/indianapolis.png", "/meh/oberhausen.png", "/meh/oslo.png", "/meh/paris.png", "/meh/philadelphia.png", "/meh/saint paul.png", "/meh/sao paulo.png", "/meh/seattle.png"],
+  "good":["/good/atlanta.png", "/good/basel.png", "/good/brisbane.png", "/good/chicago.png", "/good/houston.png", "/good/madrid.png", "/good/mannheim.png", "/good/munich.png", "/good/new york1.png", "/good/osaka.png", "/good/perth.png", "/good/santiago.jpeg", "/good/tokyo.png"],
+  "amazing":["/amazing/birmingham.png", "/amazing/buenos aires.png", "/amazing/ft lauderdale.png", "/amazing/hershey.png", "/amazing/manchester.png", "/amazing/nashville.png", "/amazing/new york2.png", "/amazing/sacramento.png", "/amazing/vancouver.png", "/amazing/washington.png"],
+  "angelic":["/angelic/antwerp.png", "/angelic/barcelona.png", "/angelic/dallas.png", "/angelic/glasgow.png", "/angelic/la1.png", "/angelic/london1.png", "/angelic/stockholm.png", "/angelic/toronto.png"],
+  "god":["/god/dublin.png", "/god/la2.png", "/god/london2.png", "/god/mexico1.png", "/god/mexico2.png", "/god/san jose.png", "/god/sydney.png"]
+}

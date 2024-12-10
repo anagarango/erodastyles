@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import posts from "../../posts/posts.json"
 import musicalInfluences from "../../posts/musicalinfluences.json"
 import recentprojects from "../../posts/recentprojects.json"
+import Footer from "./components/footer";
 
 export default function Home() {
 	const r = useRouter()
@@ -95,7 +96,7 @@ export default function Home() {
 					<h1 style={{fontSize:"26px", fontWeight:"600" ,borderBottom:"1px solid #DBCDCD", paddingTop:"50px"}}>HARRY'S MUSICAL INFLUENCES</h1>
 					<div style={{display:"flex", flexWrap:"wrap", gap:"20px", padding:"30px 0"}}>
 						{musicalInfluences.map((o,i)=>(
-							<div id="musicalinfluences" onClick={()=>r.push(`/musicalinfluences/${i}`)} style={{width:"calc(50% - 10px)", padding:"20px", height:"350px", borderRadius: 15, position:"relative", cursor:"pointer", backgroundImage:`url(/musicalinfluences/${o.cover})`, backgroundSize:"cover", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
+							<div id="musicalinfluences" onClick={()=>r.push(`/musicalinfluences/${i}`)} style={{width:"calc(50% - 10px)", padding:"20px", height:"300px", borderRadius: 15, position:"relative", cursor:"pointer", backgroundImage:`url(/musicalinfluences/${o.cover})`, backgroundSize:"cover", backgroundRepeat:"no-repeat", backgroundPosition:"top"}}>
 								<h4 id="heading" style={{width:"calc(100% - 40px)", backgroundColor:"rgba(255,255,255,0.9)", position:"absolute", padding:"30px", bottom:"5%", fontSize:"25px", borderRadius:5}}>{o.title}</h4>
 							</div>
 						))}
@@ -110,13 +111,14 @@ export default function Home() {
 									<h4 id="heading" style={{fontSize:"25px"}}>{o.title}</h4>
 									<p style={{padding:"20px 0 0 0", textAlign:"center"}}>{o.snippet}</p>
 								</div>
-								<img src={`/recentprojects/${o.cover}`} style={{width:"50%", borderRadius:"10px"}}/>
+								<img src={`/recentprojects/${o.cover}`} style={{width:"50%", objectFit:"cover", borderRadius:"10px"}}/>
 							</div>
 						))}
 					</div>
 				</div>
 
 			</div>
+			<Footer/>
 			
     </div>
   );

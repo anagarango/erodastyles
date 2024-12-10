@@ -3,6 +3,7 @@ import Menu from "../../components/menu";
 import post from "../../../../posts/posts.json"
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import images from "../../../../posts/liveontour.json"
 
 export default function Home() {
   const {folder} = useParams()
@@ -19,18 +20,64 @@ export default function Home() {
             </div>
           </div>
           <div style={{padding:"70px"}}>
-            <div dangerouslySetInnerHTML={{ __html: post[Number(folder)].content }} />
-            {/* <p style={{paddingBottom:"30px"}}>Grammy-winning artist Harry Styles announced on social media Wednesday (March 23, TODAY!) that his highly anticipated third studio album, Harry’s House, will arrive May 20th.</p>
-            <p style={{paddingBottom:"30px"}}>According to the press release, Harry’s House will have 13 tracks — more than any of his previous albums. Though no further details on the album’s tracklist are available yet, the “Watermelon Sugar” singer did unveil the Harry’s House cover art: a photo of a confused-looking Harry scratching his face as he stands on the ceiling of an upside-down living room.</p>
-            <h4 style={{fontWeight:600, padding:"30px 0"}}>Trailer Teaser and Dedicated Page</h4>
-            <p style={{paddingBottom:"30px"}}>Styles also released a 40-second trailer for the new album, wherein he walks pensively onto a theater stage and smiles into the camera as the outline of a yellow house rises above him.</p>
-            <p style={{paddingBottom:"30px"}}>The 28-year-old pop star’s announcement confirms the theories of some of his detective-eyed fans, who noticed he’d followed social media accounts titled You Are Home. They also discovered a mysterious website YouAreHome.co, which shows nothing but a beige door that updates every day to open up and show a different image when you hover over it (doesn’t work well on mobile).</p>
-            <p style={{paddingBottom:"30px"}}>As of the album announcement, the door has changed to the Harry’s House cover art.</p>
-            <p style={{paddingBottom:"30px"}}>Harry’s House follows 2019’s Fine Line — for which he just finished up his world tour —  and his 2017 self-titled debut album</p>
-            <h4 style={{fontWeight:600, padding:"30px 0"}}>My Thoughts...</h4>
-            <p style={{paddingBottom:"30px"}}>I was in class when my friend sent me the instagram post Harry announced the release of his new album. Although, I had been anticipating that he was going to release something soon, like a music video, because of what the Harry accounts that I follow were posting about some speculations and he had been filming a music video in London, but I was not waiting for that new release to be a whole album! The cover of the album is just soooo pretty, it’s the best one so far, but I don’t know how I feel about the name of the album… it’s the second album where he has included his name in an album and it just makes him look like he’s full of himself…</p>
-            <p>As we wait for the new release, here are some fan reaction’s to the announcements:</p> */}
-            {/* <p style='padding-bottom:30px'>After One Direction came in 3rd in the X-Factor, Simon Cowell was willing enough to sponsor them to continue their careers as singers. They released their debut track “What Makes You Beautiful” (that has now reached over 1 Billion views) and it premiered at No.28 on the Billboard Hot 100 Singles. After this, they went on to create their first debut album “Up All Night” and they became household names in the U.K, U.S, and beyond. The popular song became so impactful that they found themselves on the biggest of international stages when they performed “What Makes You Beautiful” at the closing ceremony o the 2012 Summer Olympics in London. They then released “Take Me Home”, “Midnight Memories”, “Four”, and “Made in the A.M”. After 5 years together, the band announced their “hiatus”(it’s been 7 years!!) and each one pursued their solo careers.</p><p>In 2016, Harry signed a solo contract with Columbia Records and released his self-titled debut album 11 months later to critical acclaim, and later embarked on a world tour (I was lucky enough to attend). Through this time however of his first release of his set-titled album, he was relatively not as big as Justin Bieber or Shawn Mendes, but only after his sophomore album, “Fine Line” came out in late 2019, his hit singles hit a different chord in the world. Two of his songs, “Watermelon Sugar and “Adore You”</p><div style='display:flex; justify-content:space-around; padding:30px 0'><div><Image src='/HarryStyles-SelfTitled.png' width={150} height={150} style='width:100%'/><h4 style='font-weight:600'>3.9 Billion Streams (as of 2021)</h4></div><div> <Image src='/HarryStyles-FineLine.png' width={150} height={150} style='width:100%'/><h4 style='font-weight:600'>7.4 Billion Streams (as of 2021)</h4></div></div><p>This only means that his popularity as a solo artist will continue to climb to the charts. (as of right now [March 2022], #67 most listened artist on Spotify).</p> */}
+            {Number(folder) !== 2 && <>
+              <div dangerouslySetInnerHTML={{ __html: post[Number(folder)].content }} />
+            </>}
+            
+            {Number(folder) == 2 && <>
+              <p>I would rank the Love On Tour outfits too, but I was slightly disappointed since like 80% of them were the same high-rise(all the way to the belly button) and wide-legged pants with mid-sleeve dress shirt and suspenders but had different patterns and colours :/ Live On Tour had a variety of outfits. Ones that I liked… and others that I didn’t (really) like. I’ll be ranking them from worst to best in my opinion</p>
+                <h1 style={{padding:"20px 0 0 0", fontSize:"18px", fontWeight:"700"}}>NEVER again</h1>
+                <p>I just wouldn’t want to see these ever again, the metallic look looks kinda weird and these sparkly ones were just not doing it.</p>
+                <div style={{display:"flex", flexWrap:"wrap", gap:"2px", padding:"10px 0"}}>
+                  {images.hell.map((o,i)=>(
+                    <img src={`/liveontoursuits${o}`} style={{height:"250px",}}/>
+                  ))}
+                </div>
+                <hr></hr>
+                <h1 style={{padding:"20px 0", fontSize:"18px", fontWeight:"700"}} >Meh</h1>
+                <p>Slightly better than the last one, but I thought these were pretty whatever or were just a little too crazy (especially there first two).</p>
+                <div style={{display:"flex", flexWrap:"wrap", gap:"2px", padding:"10px 0"}}>
+                  {images.meh.map((o,i)=>(
+                    <img src={`/liveontoursuits${o}`} style={{height:"250px",}}/>
+                  ))}
+                </div>
+                <hr></hr>
+                <h1 style={{padding:"20px 0", fontSize:"18px", fontWeight:"700"}} >Normal</h1>
+                <p>There weren’t very experimental, but were good enough to be worn normally in other events that are appropriate, so they’re good just not amazing</p>
+                <div style={{display:"flex", flexWrap:"wrap", gap:"2px", padding:"10px 0"}}>
+                  {images.good.map((o,i)=>(
+                    <img src={`/liveontoursuits${o}`} style={{height:"250px",}}/>
+                  ))}
+                </div>
+                <hr></hr>
+                <h1 style={{padding:"20px 0", fontSize:"18px", fontWeight:"700"}} >Amazing</h1>
+                <p>He was a bit more wild, a lot more bolder than last few ones. Amazing nonetheless and I wouldn’t mind seeing them again in some way.</p>
+                <div style={{display:"flex", flexWrap:"wrap", gap:"2px", padding:"10px 0"}}>
+                  {images.amazing.map((o,i)=>(
+                    <img src={`/liveontoursuits${o}`} style={{height:"250px",}}/>
+                  ))}
+                </div>
+                <hr></hr>
+                <h1 style={{padding:"20px 0", fontSize:"18px", fontWeight:"700"}} >Angelic</h1>
+                <p>These were just suits that took a while to see if they were better than the “Amazing tier” and it just didn’t feel right that they were in that category, so it made sense to make a new tier for it.</p>
+                <div style={{display:"flex", flexWrap:"wrap", gap:"2px", padding:"10px 0"}}>
+                  {images.angelic.map((o,i)=>(
+                    <img src={`/liveontoursuits${o}`} style={{height:"250px",}}/>
+                  ))}
+                </div>
+                <hr></hr>
+                <h1 style={{padding:"20px 0", fontSize:"18px", fontWeight:"700"}} >God</h1>
+                <p>Just the best of the best, fell in love with how they look on him immediately. I would probably cry if I ever saw something like these again, they were just outstanding, just everything about them are just *muah* 👌</p>
+                <div style={{display:"flex", flexWrap:"wrap", gap:"2px", padding:"10px 0"}}>
+                  {images.god.map((o,i)=>(
+                    <img src={`/liveontoursuits${o}`} style={{height:"250px",}}/>
+                  ))}
+                </div>
+                <hr></hr>
+                <p>For a more stepped back look on his suits, here is an illustration someone made for the suits he wore for you to examine and see which ones you would’ve picked to be in your “God Tier”.</p>
+                <img src="/liveontoursuits/harry-styles-tour-suits.jpg"/>
+            </>}
+            
           </div>
         </div>
       </div>

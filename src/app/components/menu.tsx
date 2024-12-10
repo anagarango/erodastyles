@@ -26,17 +26,11 @@ export default function Menu() {
 			{
 				key: '1',
 				label: (
-					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}}  onClick={()=>r.push("/author")}>GALLERY</h1>
-				)
-			},
-			{
-				key: '3',
-				label: (
 					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}}  onClick={()=>r.push("/author")}>SOURCES</h1>
 				)
 			},
 			{
-				key: '4',
+				key: '2',
 				label: (
 					<a style={{fontSize:"16px", fontFamily:"Montserrat"}}  target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
 						HARRY STYLES IS OVERRATED
