@@ -12,13 +12,13 @@ export default function Menu() {
         {
           key: '1',
           label: (
-            <h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/author")}>ABOUT THE AUTHOR</h1>
+            <h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/about/author")}>ABOUT THE AUTHOR</h1>
           )
         },
         {
           key: '2',
           label: (
-						<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/author")}>ABOUT THE SINGER</h1>
+						<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/about/singer")}>ABOUT THE SINGER</h1>
           )
         }
     ];
@@ -32,8 +32,8 @@ export default function Menu() {
 			{
 				key: '2',
 				label: (
-					<a style={{fontSize:"16px", fontFamily:"Montserrat"}}  target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-						HARRY STYLES IS OVERRATED
+					<a style={{fontSize:"16px", fontFamily:"Montserrat"}}  target="_blank" rel="noopener noreferrer" href="https://youtu.be/dQw4w9WgXcQ?si=s1KEHa2UNg8g31Yy">
+						HARRY STYLES IS LOWKEY OVERRATED
 					</a>
 				)
 			}
@@ -48,7 +48,7 @@ export default function Menu() {
 			{
 				key: '2',
 				label: (
-					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/author")}>RECENT PROJECTS</h1>
+					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}} onClick={()=>r.push("/recentprojects")}>RECENT PROJECTS</h1>
 				)
 			}
 		];
