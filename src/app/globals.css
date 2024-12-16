@@ -42,6 +42,23 @@ body {
   width: 100vw;
 }
 
+.subheading{
+  padding: 17px 0 10px 0;
+  font-weight: 700;
+}
+
+.div-images{
+  display: flex;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+
+.div-images img{
+  max-width: 32.5%;
+  height: auto;
+  object-fit: cover;
+}
+
 #carousel {
   width: 100%;
   display:flex;
@@ -78,7 +95,9 @@ body {
   background-color: #F3F3F3 !important;
 }
 
-
+.olnum{
+  padding: 0 0 7px 15px;
+}
 
 @media screen and (max-width:900px) {
   #aboutblog{

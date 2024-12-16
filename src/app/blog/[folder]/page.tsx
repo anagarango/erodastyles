@@ -23,23 +23,6 @@ export default function Home() {
             {Number(folder) !== 2 && <>
               <div dangerouslySetInnerHTML={{ __html: post[Number(folder)].content }} />
             </>}
-            {/* <h1>Baby Harry</h1>
-            <div>
-              <img src=""/>
-              <img src=""/>
-              <img src=""/>
-            </div>
-            <h1>"Up All Night" Harry</h1>
-            <h1>"Take Me Home" Harry</h1>
-            <h1>Frat Boy Harry</h1>
-            <h1>Bandana Harry</h1>
-            <h1>Prince Hair Harry</h1>
-            <h1>Long Hair Harry</h1>
-            <h1>Dunkirk Harry</h1>
-            <h1>"Live On Tour" Harry</h1>
-            <h1>"Fine Line" Harry</h1>
-            <h1>Quarantine Harry</h1>
-            <h1>"Love On Tour Harry"</h1> */}
             {Number(folder) == 2 && <>
               <p>I would rank the Love On Tour outfits too, but I was slightly disappointed since like 80% of them were the same high-rise(all the way to the belly button) and wide-legged pants with mid-sleeve dress shirt and suspenders but had different patterns and colours :/ Live On Tour had a variety of outfits. Ones that I liked… and others that I didn’t (really) like. I’ll be ranking them from worst to best in my opinion</p>
                 <h1 style={{padding:"20px 0 0 0", fontSize:"18px", fontWeight:"700"}}>NEVER again</h1>
@@ -94,6 +77,8 @@ export default function Home() {
                 <img src="/liveontoursuits/harry-styles-tour-suits.jpg"/>
             </>}
             
+
+
           </div>
         </div>
       </div>

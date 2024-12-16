@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { useRouter } from 'next/navigation'
 import { CaretDownOutlined } from '@ant-design/icons';
 import { Space, Dropdown } from 'antd';
@@ -7,8 +6,9 @@ import type { MenuProps } from 'antd';
 
 export default function Menu() {
     const r = useRouter()
+		type MenuItem = Required<MenuProps>['items'][number];
 
-    const about: MenuProps['about'] = [
+    const about: MenuItem[] = [
         {
           key: '1',
           label: (
@@ -22,11 +22,11 @@ export default function Menu() {
           )
         }
     ];
-		const funsies: MenuProps['funsies'] = [
+		const funsies: MenuItem[] = [
 			{
 				key: '1',
 				label: (
-					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}}  onClick={()=>r.push("/author")}>SOURCES</h1>
+					<h1 style={{fontSize:"16px", fontFamily:"Montserrat"}}  onClick={()=>r.push("/sources")}>SOURCES</h1>
 				)
 			},
 			{
@@ -38,7 +38,7 @@ export default function Menu() {
 				)
 			}
 		];
-		const inspirations: MenuProps['inspirations'] = [
+		const inspirations: MenuItem[] = [
 			{
 				key: '1',
 				label: (
@@ -68,7 +68,6 @@ export default function Menu() {
 						<CaretDownOutlined style={{ color: '#F4CCC2' }}/>
 					</Space>
 				</Dropdown>
-				<h1>CONTACT</h1>
 				<Dropdown menu={{ items:inspirations }}>
 					<Space>
 						INSPIRATIONS

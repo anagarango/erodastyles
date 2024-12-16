@@ -14,7 +14,7 @@ export default function Blog() {
             {blogPosts.map((o,i)=>{
               return(
                 <div style={{display:"flex", gap:15}}>
-                  <Image alt={`Cover for ${o.title}`} src={o.cover} width={300} height={300} />
+                  <Image style={{objectFit:'cover'}} alt={`Cover for ${o.title}`} src={o.cover} width={300} height={300} />
                   <div style={{width:"70%", display:"flex", flexDirection:"column", alignItems:"center"}}>
                     <h1 id="heading" style={{fontSize:"35px"}}>{o.title}</h1>
                     <h4 style={{fontSize:"13px", color:"#EF9B9A", paddingBottom:"15px"}}>{o.date}</h4>
